@@ -3,12 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.restApiFrameWork.statuses.UserTimeLineTest">
+      <class name="com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork">
         <methods>
-          <include name="settingUp"/>
-          <include name="readTweet"/>
+          <include name="beforeClass"/>
+          <include name="deleteTweet"/>
         </methods>
-      </class> <!-- com.restApiFrameWork.statuses.UserTimeLineTest -->
+      </class> <!-- com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

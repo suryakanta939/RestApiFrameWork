@@ -1,21 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3710" started-at="2018-01-28T14:06:01Z" finished-at="2018-01-28T14:06:05Z">
+  <suite name="Default suite" duration-ms="6634" started-at="2018-01-28T16:47:53Z" finished-at="2018-01-28T16:48:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3710" started-at="2018-01-28T14:06:01Z" finished-at="2018-01-28T14:06:05Z">
-      <class name="com.restApiFrameWork.statuses.UserTimeLineTest">
-        <test-method status="PASS" signature="settingUp()[pri:0, instance:com.restApiFrameWork.statuses.UserTimeLineTest@4c70fda8]" name="settingUp" is-config="true" duration-ms="736" started-at="2018-01-28T19:36:01Z" finished-at="2018-01-28T19:36:02Z">
+    <test name="Default test" duration-ms="6634" started-at="2018-01-28T16:47:53Z" finished-at="2018-01-28T16:48:00Z">
+      <class name="com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork@4c70fda8]" name="beforeClass" is-config="true" duration-ms="751" started-at="2018-01-28T22:17:53Z" finished-at="2018-01-28T22:17:54Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- settingUp -->
-        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.restApiFrameWork.statuses.UserTimeLineTest@4c70fda8]" name="readTweet" duration-ms="2952" started-at="2018-01-28T19:36:02Z" finished-at="2018-01-28T19:36:05Z">
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="postTweet()[pri:0, instance:com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork@4c70fda8]" name="postTweet" duration-ms="4615" started-at="2018-01-28T22:17:54Z" finished-at="2018-01-28T22:17:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- postTweet -->
+        <test-method status="PASS" signature="readTweet()[pri:0, instance:com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork@4c70fda8]" name="readTweet" duration-ms="601" started-at="2018-01-28T22:17:59Z" depends-on-methods="com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork.postTweet" finished-at="2018-01-28T22:17:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- readTweet -->
-      </class> <!-- com.restApiFrameWork.statuses.UserTimeLineTest -->
+        <test-method status="PASS" signature="deleteTweet()[pri:0, instance:com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork@4c70fda8]" name="deleteTweet" duration-ms="610" started-at="2018-01-28T22:17:59Z" depends-on-methods="com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork.readTweet" finished-at="2018-01-28T22:18:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteTweet -->
+      </class> <!-- com.restApiFrameWork.TestCases.TwitterE2EwithFrameWork -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
